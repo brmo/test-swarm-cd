@@ -4,3 +4,10 @@ testswarmcd.rn15.lab119.xyz {
                 dns cloudflare EsXfObjcR8cvm6iqWgtujtF2tqdieRD9ppGIw9EB
         }
 }
+
+enclosed.rn15.lab119.xyz {
+        reverse_proxy enclosed:80
+        tls {
+                dns cloudflare EsXfObjcR8cvm6iqWgtujtF2tqdieRD9ppGIw9EB
+        }
+}

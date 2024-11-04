@@ -1,0 +1,12 @@
+services:
+  enclosed:
+    image: corentinth/enclosed
+    hostname: enclosed
+    volumes:
+      - /dockerData/apps/enclosed/data:/app/.data
+    restart: unless-stopped
+    networks:
+      - rp
+networks:
+  rp:
+    external: true
