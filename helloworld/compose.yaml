@@ -4,6 +4,8 @@ services:
     container_name: helloworld
     networks:
       - rp
+      aliases:
+        - database
 
 networks:
   rp:
