@@ -1,7 +1,7 @@
 services:
   helloworld-http:
     image: strm/helloworld-http
-    name: helloworld-http
+    container_name: helloworld-http
     networks:
       - rp
 
