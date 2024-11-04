@@ -1,9 +1,13 @@
+version: "3.7"
 services:
   helloworld:
     image: strm/helloworld-http
     restart: unless-stopped
     networks:
-      - rp
+      rp:
+        aliases:
+          - helloapp
+          - helloworld
 
 networks:
   rp:
