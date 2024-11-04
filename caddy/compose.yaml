@@ -20,7 +20,7 @@ services:
 
 configs:
   config: 
-    file: configs/Caddyfile
+    file: config/Caddyfile
 
 networks:
   rp:
