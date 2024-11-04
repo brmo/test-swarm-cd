@@ -3,11 +3,12 @@ services:
   helloworld:
     image: strm/helloworld-http
     restart: unless-stopped
+    deploy:
+      replicas: 1
+      aliases:
+           - helloworld
     networks:
-      rp:
-        aliases:
-          - helloapp
-          - helloworld
+     -  rp
 
 networks:
   rp:
