@@ -1,0 +1,9 @@
+services:
+  helloworld-http:
+    image: strm/helloworld-http
+    networks:
+      - rp
+
+networks:
+  rp:
+    external: true

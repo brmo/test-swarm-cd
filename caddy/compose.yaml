@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+  caddy:
+    image: zydou/caddy:latest
+    restart: unless-stopped
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - 80:80
+      - 443:443
+      - 443:443/udp
+    configs:
+      - source: config
+        target: /dockerData/apps/caddy/Caddyfile
+    volumes:
+      - /dockerData/apps/caddy/data:/data
+      - /dockerData/apps/caddy/config:/config
+    networks:
+      - rp
+
+configs:
+  config: 
+    file: configs/Caddyfile
+
+networks:
+  rp:
+    external: true
