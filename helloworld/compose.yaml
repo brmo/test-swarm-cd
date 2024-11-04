@@ -5,7 +5,7 @@ services:
     networks:
       rp:
         aliases:
-          - database
+          - helloworld
 
 networks:
   rp:
