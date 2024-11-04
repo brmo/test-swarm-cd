@@ -3,9 +3,9 @@ services:
     image: strm/helloworld-http
     container_name: helloworld
     networks:
-      - rp
-      aliases:
-        - database
+      rp:
+        aliases:
+          - database
 
 networks:
   rp:
