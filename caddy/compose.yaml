@@ -11,7 +11,7 @@ services:
       - 443:443/udp
     configs:
       - source: config
-        target: /dockerData/apps/caddy/Caddyfile
+        target: /etc/caddy/Caddyfile
     volumes:
       - /dockerData/apps/caddy/data:/data
       - /dockerData/apps/caddy/config:/config
