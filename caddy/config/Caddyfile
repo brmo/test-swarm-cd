@@ -1,5 +1,5 @@
 testswarmcd.rn15.lab119.xyz {
-        reverse_proxy helloworld-http:80
+        reverse_proxy helloworld:80
         tls {
                 dns cloudflare EsXfObjcR8cvm6iqWgtujtF2tqdieRD9ppGIw9EB
         }

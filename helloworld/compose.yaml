@@ -1,11 +1,9 @@
 services:
   helloworld-http:
     image: strm/helloworld-http
-    container_name: helloworld-http
+    container_name: helloworld
     networks:
-      - rp:
-        aliases:
-          - helloworld
+      - rp
 
 networks:
   rp:
